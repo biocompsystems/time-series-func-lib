@@ -31,9 +31,9 @@ namespace TSFL
         {
           throw new ArgumentException("data cannot be null");
         }
-        if (period < 0)
+        if (period <= 0)
         {
-          throw new ArgumentException("period cannot be negative");
+          throw new ArgumentException("period must be greater than zero");
         }
         if (startRow < 0)
         {
